@@ -1,0 +1,11 @@
+.c1{
+    margin: 20px;
+    justify-content: center;
+    background-color: blue;
+
+    width: 200px;
+    height: 200px;
+}
+body{
+    background-color: black;
+}
