@@ -2,8 +2,7 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
+    display: flex;  
     align-items: center;
     height: 600px; 
     margin: 0; 
@@ -12,18 +11,22 @@ body {
 
 .container {
     background-color: blue;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     width: 90%; 
     max-width: 400px; 
     text-align: center;
+    margin: 0 auto;
 }
 
 h1, h2 {
-    
     color: white;
 }
 
+#cont{
+    font-size: 15px;
+    color: red;
+}
 img {
     border-radius: 50%;
     width: 150px;
@@ -42,19 +45,14 @@ li {
     padding: 5px 0;
 }
 
-a {
-    text-decoration: none;
-    color: red;
-}
+
 
 .button {
     display: inline-block;
-    margin-top: 15px;
     padding: 10px 20px;
     background-color: purple;
     border-radius: 10px;
     color: white;
-    text-decoration: none; 
 }
 
 .button:hover {
