@@ -1,3 +1,4 @@
+
 body {
     background-color: black;
     color: white;
@@ -5,21 +6,25 @@ body {
     display: flex;  
     align-items: center;
     height: 600px; 
-    margin: 0; 
-    padding: 50px;
+    padding: 5px;
 }
 
 .container {
     background-color: blue;
     padding: 10px;
     border-radius: 15px;
-    width: 90%; 
-    max-width: 400px; 
+    width: 35%;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
-h1, h2 {
+h1 {
+    font-size: 30px;
+    color: white;
+}
+
+h2 {
+    font-size: 20px;
     color: white;
 }
 
@@ -41,10 +46,11 @@ ul {
 }
 
 li {
+    font-size: 15px;
     border-bottom: 1px solid white;
     padding: 5px 0;
-}
 
+}
 
 
 .button {
@@ -57,4 +63,17 @@ li {
 
 .button:hover {
     background-color: darkviolet; 
+}
+.button_voltar{
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    position: absolute;
+    left: 1%;
+}
+.button_voltar:hover {
+    background-color: rgb(100, 100, 245);
+    
 }
