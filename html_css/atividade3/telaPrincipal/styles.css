@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.card1{
+    background-color: black;
+    height: auto;
+    border-bottom: 2px solid white;
+}
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    color: white
+}
+
+
+
+
+.button1{
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border: none 
+}
+
+
+.card2{
+    border-radius: 10px;
+    border: none;
+    margin: 10px auto;
+    height: 500px;
+    width: 60%;
+    background-color: blue;
+    text-align: center;
+}
+
+.button2, .button3, .button4, .button5{
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 22%;
+    width: 85%;
+    background-color: black;
+}
+
+.button1:hover, .button2:hover, .button3:hover, .button4:hover, .button5:hover {
+    background-color: rgb(100, 100, 245);
+}
+
+.icon1, .icon2, .icon3, .icon4{
+    display: flex;
+    padding: 3px;
+
+}
+
+.icon_h2{
+    margin: auto 10px;
+    color: white;
+    margin-right: none;
+}
+.icon_p {
+    margin: auto 10px;
+    color: white;
+}
+
+.imagemBoloDeCenoura, .imagemBoloDeChocolate, .imagemBoloDeFuba, .imagemBoloDeLimao{
+    border-radius: 10px;
+    height: 90px;
+    width: 90px;
+
+
+}
+
+.card3{
+    border-top: 2px solid white;
+    height: 53.49px;
+    background-color: black;
+}
