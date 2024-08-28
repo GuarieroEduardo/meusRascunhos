@@ -8,7 +8,7 @@ body{
     background-color: black;
 }
 
-.cardCenoura{
+.cardBolo{
     border-top: 1px solid white;
     border-bottom: 1px solid white;;
     margin: 50px auto;
@@ -17,23 +17,38 @@ body{
     background-color: black;
     display: flex;  
     align-items: center;
+    position: relative;
 }
 
 .imagemBolo {
+    border: 1px solid white;
     margin: auto;
     height: 500px;
     width: 35%;
-    background-color: blueviolet;
+
 }
 
-.descriçãoBolo{
+.descricaoBolo{
+    border: 1px solid white;
     margin: auto;
     height: 500px;
     width: 60%;
-    background-color: blue;
+
 }
 
+
+li {
+    margin-left: 30px;
+    margin-bottom: 1px;
+    color: white; 
+    text-align: justify; 
+}
+
+
 img {
+    margin: 5px auto;
+    height: 250px;
+    width: 350px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -53,3 +68,21 @@ p{
     color: white;
     
 }
+
+.botaoVolta {
+    position: absolute;
+    top: 1px; 
+    left: 10px; 
+    height: 20px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+.botaoVolta:hover{
+    background-color: rgb(100, 100, 245);
+}
+
+
