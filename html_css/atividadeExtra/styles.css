@@ -6,6 +6,8 @@
 
 body{
     height: 100vh;
+    width: 100%;
+    background-color: green;
 }
 
 nav.MenuLateral{
@@ -20,6 +22,8 @@ nav.MenuLateral{
     overflow: hidden;
     transition: .2s;
 }
+
+
 
 
 .abrirMenu{
@@ -71,15 +75,14 @@ ul li.itemMenu a .NomeDoIcone{
 }
 
 nav.Corpotext{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
     background-color: brown;
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
 .corpo{
-    width: 50%;
+    width: 80%;
     height: 100%;
     background-color: blueviolet;
 }
