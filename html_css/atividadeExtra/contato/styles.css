@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: green;
+}
+
+nav.MenuLateral{
+    width: 300px;
+    height: 100%;
+    background-color: black;
+    padding: 50px 0 50px 2%;
+    box-shadow: 3px 0 0 purple;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+
+
+
+.abrirMenu{
+    width: 100%;
+    padding-left: 10px;
+    background-color: red;
+}
+
+.abrirMenu > i{
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+    background-color: blue;
+}
+
+ul li.itemMenu:hover{
+    background-color: purple;
+}
+
+ul li.itemMenu{
+    transition: .2s;
+}
+
+ul li.itemMenu a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 25px 5%;
+    margin-bottom: 20px;
+    line-height: 50px;
+
+}
+
+ul li.itemMenu a .Icone > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ul li.itemMenu a .NomeDoIcone{
+    margin-left: 25px;
+    background-color: yellow;
+}
+
+nav.Corpotext{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 500px;
+    background-color: brown;
+    width: 50%;
+    height: 100%;
+}
+
+.corpo{
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: blueviolet;
+}
+
+h1, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: white;
+    
+}
+
+
+.ImgContato{
+    border: 2px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+}
