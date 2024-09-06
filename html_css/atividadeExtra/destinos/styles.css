@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background-color: green;
+    background-color: rgb(34, 34, 34);
 }
 
 nav.MenuLateral{
@@ -14,7 +14,7 @@ nav.MenuLateral{
     height: 100%;
     background-color: black;
     padding: 50px 0 50px 2%;
-    box-shadow: 3px 0 0 purple;
+    box-shadow: 3px 0 0 red;
     position: fixed;
     top: 0;
     left: 0;
@@ -41,11 +41,10 @@ nav.MenuLateral{
 ul{
     height: 100%;
     list-style-type: none;
-    background-color: blue;
 }
 
 ul li.itemMenu:hover{
-    background-color: purple;
+    background-color: red;
 }
 
 ul li.itemMenu{
@@ -70,14 +69,12 @@ ul li.itemMenu a .Icone > i{
 
 ul li.itemMenu a .NomeDoIcone{
     margin-left: 25px;
-    background-color: yellow;
 }
 
 nav.Corpotext{
     display: flex;
     flex-wrap: wrap;
     margin-left: 370px;
-    background-color: brown;
     width: 70%;
     height: 100%;
 }
@@ -87,10 +84,12 @@ nav.Corpotext{
     margin: 0 auto;
     width: 80%;
     height: 100%;
-    background-color: blueviolet;
+    border: 3px solid red;
+    background-color: black;
 }
 
 .corpao{
+    padding: 10px;
     display: flex;
     justify-content:space-between;
     width: 100%;
