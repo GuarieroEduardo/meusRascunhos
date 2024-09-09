@@ -14,7 +14,6 @@ body{
 
 .container{
     flex-wrap: wrap;
-
     border-radius: 20px;
     background-color: black;
     display: flex;
@@ -41,6 +40,7 @@ body{
 
 .card2{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
     border-top-right-radius: 20px;
