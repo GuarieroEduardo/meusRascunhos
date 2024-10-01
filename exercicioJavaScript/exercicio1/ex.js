@@ -1,12 +1,19 @@
 var arr1 = [1, 2, 3, 4 , 5,]
 var arr2 = [5, 6, 7 ,8, 9, 10]
-var arr3 = []
 
-function interseccao(arr1, arr2){
+
+function uniao(arr1, arr2){
     var arr3 = arr1.concat(arr2)
     
-    for (let i = 0; i < arr3.length(); i++){
-    
+    for (let i = 0; i < arr3.length; i++){
+        for(let j = 0; j < arr3.length; j++){
+            if (arr3[i]==arr3[j]){
+                arr3.splice(arr3[j]);
+                j--;
+
+            }
+        }
+
 
     }
     return arr3
@@ -15,4 +22,4 @@ function interseccao(arr1, arr2){
 
 
 
-console.log(interseccao(arr1, arr2))
+console.log(uniao(arr1, arr2))
