@@ -5,8 +5,11 @@ var arr3 = []
 function interseccao(arr1, arr2){
     var arr3 = arr1.concat(arr2)
     
-    for (let i = 0; i < arr3.)
+    for (let i = 0; i < arr3.len; i++){
+
+    }
     return arr3
 } 
+
 
 console.log(interseccao(arr1, arr2))
