@@ -52,30 +52,6 @@ ul li.itemMenu{
     transition: .2s;
 }
 
-ul li.itemMenu a{
-    <div class="corpão">
-                <div class="corpinho1">
-                    <img src="https://media.gettyimages.com/id/1062428612/pt/foto/gondolier-heads-into-the-sunset-along-venices-grand-canal.jpg?s=612x612&w=gi&k=20&c=u0lm4rbgf8_ukypfNbguCR2hbGuUerL4GKueKZpa8fA="
-                        alt="ImgVeneza" class="imgDestino">
-                </div>
-                <div class="corpinho">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQuJ8COGazm5YTfAT79_MxM-CrmY-wQl90hfPo1jFGTT-BnISZPgHljdVeztdFYr7_VwY&usqp=CAU"
-                        alt="ImgAfrica" class="imgDestino">
-                </div class="corpinho2">
-                <div>
-                    <img src="https://www.designi.com.br/images/preview/10214069.jpg" alt="ImgBrasil"
-                        class="imgDestino">
-                </div class="corpinho3">
-            </div>
-    display: flex;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    padding: 25px 5%;
-    margin-bottom: 20px;
-    line-height: 50px;
-
-}
 
 ul li.itemMenu a .Icone > i{
     font-size: 30px;
