@@ -8,7 +8,7 @@ function uniao(arr1, arr2) {
         for (let j = i + 1; j < arr3.length; j++) { 
             if (arr3[i] == arr3[j]) {
                 arr3.splice(j, 1);  
-                j--;  
+                j = j - 1;  
             }
         }
     }
