@@ -1,0 +1,9 @@
+div {
+    height: 100px;
+    display: flex;
+}
+
+button{
+    height: 50px;
+    margin-right: 10px;
+}
