@@ -4,6 +4,7 @@ var text = document.createElement("div")
 
 var mostrar = 0
 
+
 botao[0].addEventListener('click', function(){
     if (mostrar == 0){
         text.innerHTML = "<p>eu tentei</p>"
