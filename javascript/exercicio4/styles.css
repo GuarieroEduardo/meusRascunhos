@@ -1,6 +1,4 @@
-.item{
-    display: flex;
-    flex-direction:row;
-    background-color: black;
+#menu{
     
+    padding:10px -5px;
 }
