@@ -1,4 +1,17 @@
-#menu{
-    
+#menu{  
     padding:10px -5px;
+}
+
+.rmv {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+    margin-top: 5px;
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.rmv:hover {
+    background-color: darkred;
 }
