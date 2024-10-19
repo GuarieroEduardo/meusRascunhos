@@ -6,22 +6,25 @@ const senha2 = document.getElementById("senha2")
 
 form.addEventListener("submit", function(event){
     event.preventDefault()
-    let isValid = ckeckEquired([usuario, email, senha, senha2])
-    isValid = ckeckSize(usuario, 15,3) && isValid
-    isValid = ckeckSize(senha, 15,3) && isValid
-    isValid = ckeckPassoword(senha, senha2) && isValid
+    let  isValid =  ckeckEquired([usuario, email, senha, senha2])
+    if (isValid){
+        isValid = ckeckSize(usuario, 15,3) && isValid
+        isValid = ckeckSize(senha, 15,3) && isValid
+        isValid = ckeckPassoword(senha, senha2) && isValid
 
-    console.log(isValid)
 
-    if(valido){
-        const dados = { 
-        usuarioNome: usuario.value,
-        usuarioEmail: email.value,
-        usuarioSenha: senha.value
-        }
-        console.log(JSON.stringify(dados))
-        window.location.href = "./home.html"
+        if(isValid){
+            const dados = { 
+            usuarioNome: usuario.value,
+            usuarioEmail: email.value,
+            usuarioSenha: senha.value
+            }
+            console.log(JSON.stringify(dados))
+            window.location.href = "./home.html"
     }
+    }
+
+    
 })
 
 function ckeckEquired(listaInput){
