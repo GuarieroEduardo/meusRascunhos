@@ -11,14 +11,20 @@
         <div class="card1">
             <img class="img_login" src="https://th.bing.com/th/id/OIP.OCE7ZI0fKAOC6Y8iTIUEaAHaEH?rs=1&pid=ImgDetMain" alt="imagemDeLogin">
         </div>
-        <div class="card2">
+        <form id="card2" class="card2">
             <h1>LOGIN</h1>
-            <h3>Usuário: </h3>
-            <input type="text" placeholder="Nome">
-            <h3>Password: </h3>
-            <input type="password" placeholder="Senha">
-            <button>CONFIRMA</button>           
-        </div>
+            <div class="form-control">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" aria-placeholder="Digite o seu usuario">
+                <small>mensagem de erro</small>
+            </div>
+            <div class="form-control">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" aria-placeholder="Digite o seu senha">
+                <small>mensagem de erro</small>
+            </div>
+            <button type="submit">CONFIRMA</button>           
+        </form>
     </div>
 </body>
 </html>
