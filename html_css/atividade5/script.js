@@ -1,75 +1,62 @@
-const form = document.getElementById("form")
-const usuario = document.getElementById("usuario")
-const email = document.getElementById("email")
-const senha = document.getElementById("senha")
-const senha2 = document.getElementById("senha2")
+const form = document.getElementById("card2");
+const usuario = document.getElementById("usuario");
+const senha = document.getElementById("senha");
 
-form.addEventListener("submit", function(event){
-    event.preventDefault()
-    let  isValid =  ckeckEquired([usuario, email, senha, senha2])
-    if (isValid){
-        isValid = ckeckSize(usuario, 15,3) && isValid
-        isValid = ckeckSize(senha, 15,3) && isValid
-        isValid = ckeckPassoword(senha, senha2) && isValid
-
-
-        if(isValid){
-            const dados = { 
-            usuarioNome: usuario.value,
-            usuarioEmail: email.value,
-            usuarioSenha: senha.value
-            }
-            console.log(JSON.stringify(dados))
-            window.location.href = "./home.html"
-    }
-    }
-
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
     
-})
+    let isValid = checkRequired([usuario, senha]);
+    if (isValid) {
+        isValid = checkSize(usuario, 15, 4) && isValid;
+        isValid = checkSize(senha, 15, 4) && isValid;
 
-function ckeckEquired(listaInput){
-    let valido = true
-    listaInput.forEach(function(input){
-        if(input.value == ""){
-            ShowError(input, "Campo Obrigatorio")
-            valido = false
-        }else{
-            ShowSucesso(input)
+        if (isValid) {
+            const dados = { 
+                usuarioNome: usuario.value,
+                usuarioSenha: senha.value
+            };
+            console.log(JSON.stringify(dados));
+            window.location.href = "home.html";
+        }
+    }
+});
+
+function checkRequired(listaInput) {
+    let valido = true;
+    listaInput.forEach(function(input) {
+        if (input.value.trim() === "") {
+            showError(input, "Campo obrigatório");
+            valido = false;
+        } else {
+            showSuccess(input);
         }
     });
-    return valido
+    return valido;
 }
 
-function ckeckSize(input, max, min){
-    let valido = true
-    if (input.value.length < min){
-        ShowError(input, `minino ${min} caracteres`)
-        valido = false
-    }else if(input.value.length > max){
-        ShowError(input, `máximo ${max} caracteres`)
-        valido = false
+function checkSize(input, max, min) {
+    if (input.value.length < min) {
+        showError(input, `Mínimo de ${min} caracteres`);
+        return false;
+    } else if (input.value.length > max) {
+        showError(input, `Máximo de ${max} caracteres`);
+        return false;
     }
-    return valido
+    return true;
 }
 
-function ckeckPassoword(senha, senha2){
-    if(senha.value !== senha2.value){
-        ShowError(senha2, "Senhas não são iguais")
-        return false
-    }
-    return true
+function showError(input, mensagem) {
+    const formControl = input.parentElement;
+    formControl.classList.add("erro");
+    const small = formControl.querySelector("small");
+    small.innerHTML = mensagem;
+    small.style.visibility = "visible";  
 }
 
-function ShowError(input, mensagem){
-    const FormControl = input.parentElement
-    FormControl.classList.add("erro")
-    // FormControl.className = "form-control erro"
-    const small = FormControl.querySelector("small")
-    small.innerHTML = mensagem 
-}
-
-function ShowSucesso(input){
-    const FormControl = input.parentElement
-    FormControl.classList.add("sucesso")
-
+function showSuccess(input) {
+    const formControl = input.parentElement;
+    formControl.classList.remove("erro");
+    formControl.classList.add("sucesso");
+    const small = formControl.querySelector("small");
+    small.style.visibility = "hidden";  
 }
